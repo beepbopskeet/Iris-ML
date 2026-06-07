@@ -1,74 +1,99 @@
-# Iris Classification Project 🌸
-*(English below / Türkçe aşağıda)*
+# 🌸 Iris Species Classification
+
+## 📌 Project Overview
+
+This project analyzes the famous Iris dataset and builds a machine learning model to classify iris flowers into three species:
+
+* Iris Setosa
+* Iris Versicolor
+* Iris Virginica
+
+The workflow includes data exploration, visualization, preprocessing, feature scaling, model training, and evaluation.
 
 ---
 
-## 🇹🇷 Türkçe Açıklama
+## 🛠 Technologies Used
 
-Bu proje **Atıl Samancıoğlu - Machine Learning Kursu** kapsamındaki **Iris veri seti ödevidir**.  
-
-Proje, küçük ve klasik bir veri seti üzerinde **temel makine öğrenmesi sınıflandırması** uygulamalarını göstermektedir.
-
-### 🔹 Proje İçeriği
-- **Veri Seti:** [Iris Dataset](https://archive.ics.uci.edu/ml/datasets/iris)
-- **Kullanılan Yöntemler**
-  - Logistic Regression
-  - Support Vector Machine (SVC)
-  - Gaussian Naive Bayes (GNB)
-- **Adımlar**
-  1. Veri keşfi (pairplot, histogram, boxplot)
-  2. Train/Test split
-  3. Özellik ölçekleme (`StandardScaler`)
-  4. Model eğitimi ve tahmin
-  5. Değerlendirme:
-     - Accuracy
-     - Confusion Matrix
-     - Classification Report
-  6. Basit model karşılaştırması
-
-### 🔹 Sonuçlar
-- **Doğruluk:** %100 (küçük veri seti, sınıflar kolay ayrılıyor)
-- Karşılaştırılan modeller: `Logistic Regression` `SVC (RBF)` `GaussianNB`
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-Learn
+* Jupyter Notebook
 
 ---
 
-## 🇬🇧 English Description
+## 📊 Exploratory Data Analysis
 
-This project is the **Iris dataset assignment** from **Atıl Samancıoğlu's Machine Learning Course**.
+The dataset was explored through:
 
-The project demonstrates **basic machine learning classification** techniques on a small classic dataset.
+* Pairplots
+* Feature distributions
+* Scatter plots
+* Statistical summaries
 
-### 🔹 Project Content
-- **Dataset:** [Iris Dataset](https://archive.ics.uci.edu/ml/datasets/iris)
-- **Techniques Used**
-  - Logistic Regression
-  - Support Vector Machine (SVC)
-  - Gaussian Naive Bayes (GNB)
-- **Steps**
-  1. Data exploration (pairplot histogram boxplot)
-  2. Train/Test split
-  3. Feature scaling with `StandardScaler`
-  4. Model training and prediction
-  5. Evaluation with
-     - Accuracy
-     - Confusion Matrix
-     - Classification Report
-  6. Simple model comparison
-
-### 🔹 Results
-- **Accuracy:** 100% on the test split (small dataset easy to separate)
-- Models compared: `Logistic Regression` `SVC (RBF)` `GaussianNB`
+Visualizations help reveal clear separation between species based on petal and sepal measurements.
 
 ---
 
-## 🔹 Files
-- `iris_classification.ipynb` → Main notebook with all steps  
-- (Optional) `images/` → Confusion matrix or EDA visuals
+## ⚙️ Data Preprocessing
+
+Steps performed:
+
+* Removed unnecessary ID column
+* Encoded species labels
+* Split dataset into training and testing sets
+* Applied feature scaling using StandardScaler
 
 ---
 
-💡 **Note / Not:**  
-This project is for **learning and practicing the ML pipeline**:
-- Data preparation
-- Model training
-- Model evaluation
+## 🤖 Machine Learning
+
+Classification was performed using supervised learning techniques.
+
+Workflow:
+
+1. Data Preparation
+2. Train-Test Split
+3. Feature Scaling
+4. Model Training
+5. Prediction
+6. Performance Evaluation
+
+---
+
+## 📈 Model Evaluation
+
+Performance was evaluated using:
+
+* Accuracy Score
+* Confusion Matrix
+* Classification Report
+
+The model successfully distinguishes between the three Iris species based on flower measurements.
+
+---
+
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/beepbopskeet/Iris-Species-Classification.git
+
+cd Iris-Species-Classification
+
+pip install -r requirements.txt
+
+jupyter notebook
+```
+
+---
+
+## 🎯 Future Improvements
+
+* Compare multiple classification algorithms
+* Hyperparameter tuning
+* Cross-validation
+* Feature importance analysis
+* Deployment as a web application
+
