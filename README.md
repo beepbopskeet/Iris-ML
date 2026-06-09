@@ -80,7 +80,7 @@ The model successfully distinguishes between the three Iris species based on flo
 ```bash
 git clone https://github.com/beepbopskeet/Iris-Species-Classification.git
 
-cd Iris-Species-Classification
+cd iris-species-classification
 
 pip install -r requirements.txt
 
